@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Vanish_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="8.0399092971" vpos="0" h="0.0000000000" zoom="86.1328125000" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="253059__robinhood76__05472-goblin-spell" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.43963719" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="236011">
+				<waveblock start="0">
+					<simpleblockfile filename="e08084d8.au" len="236011" min="-0.990021" max="0.989975" rms="0.143396"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="235284__cman634__buildup-jumpscare-vanish-sound" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="354560">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e72.au" len="177280" min="-0.557278" max="0.702889" rms="0.118018"/>
+				</waveblock>
+				<waveblock start="177280">
+					<simpleblockfile filename="e080887f.au" len="177280" min="-0.172118" max="0.172626" rms="0.055671"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="329323__robinhood76__06130-disappear-magic-blink" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.29587302" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="137035">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086bf.au" len="137035" min="-0.713882" max="0.776413" rms="0.052271"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="161777__timbre__remix-of-2597-schademans-bush8" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.52090703" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="101248">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d9b.au" len="101248" min="-0.930969" max="0.951767" rms="0.066307"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

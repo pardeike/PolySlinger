@@ -1,0 +1,17 @@
+# BUGS
+
+# MISSING
+- about screen with link to Patreon
+
+# IDEAS
+- tweet/post your final score screen
+- game modes:
+  - normal
+  - sandbox / casual (no time penalty)
+  - build highest tower with loose pieces
+- difficulty - easy, medium, hard
+- maybe: choose beam mode between "p:near/far=o:near/far+radius" to "p:vertical-angle=o:near/far+stronger-up/down"
+- change skybox image with level (4/8 just like sound loops?)
+- in higher levels, add more obstacles:
+  - pieces have one side black that must be placed on an outside wall
+  - 1-2 bombs appear above the last/the two last placed pieces
