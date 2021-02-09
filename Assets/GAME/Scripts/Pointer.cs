@@ -102,7 +102,7 @@ public class Pointer : MonoBehaviour
 	void RotationEvent(params object[] args)
 	{
 		if (grabInfo == null) return;
-		if ((bool)args[0] == false && gameObject != null)
+		if (gameObject != null && (bool)args[0] == false)
 			grabInfo.handStartPos = transform.position;
 	}
 
