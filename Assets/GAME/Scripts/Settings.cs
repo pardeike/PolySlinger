@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using UnityEngine;
 
 public class Settings : SettingsController<Settings>
 {
@@ -24,20 +25,30 @@ public class Settings : SettingsController<Settings>
 
 	public string DisplayString(int idx)
 	{
-		var playerHeight = extraPlayerHeight * 100;
-		var playerHeightFormat = "F0";
-		var playerHeightUnit = " cm";
-		if (RegionInfo.CurrentRegion.IsMetric == false)
+		string playerHeight()
 		{
-			playerHeight *= 0.393701f;
-			playerHeightFormat = "F1";
-			playerHeightUnit = " \"";
+			var sign = Math.Sign(extraPlayerHeight);
+			if (RegionInfo.CurrentRegion.IsMetric)
+			{
+				var cm = Mathf.RoundToInt(extraPlayerHeight * 100);
+				var prefix1 = cm == 0 ? "" : (sign == 1 ? "+" : "-");
+				return prefix1 + cm + " cm";
+			}
+
+			var h = Mathf.Abs(extraPlayerHeight);
+			var totalInches = Mathf.FloorToInt(h * 39.3701f);
+			var feet = Mathf.FloorToInt(totalInches / 12f);
+			var inches = totalInches - feet * 12;
+			var prefix2 = feet + inches == 0 ? "" : (sign == 1 ? "+" : "-");
+			if (feet == 0)
+				return $"{prefix2}{inches}\"";
+			return $"{prefix2}{feet}' {inches}\"";
 		}
 
 		return idx switch
 		{
 			0 => musicVolume.ToString("P0", CultureInfo.InvariantCulture),
-			1 => playerHeight.ToString(playerHeightFormat, CultureInfo.InvariantCulture) + playerHeightUnit,
+			1 => playerHeight(),
 			2 => controllerSensitivity.ToString("P0", CultureInfo.InvariantCulture),
 			3 => controllerAngle.ToString("F0", CultureInfo.InvariantCulture) + "°",
 			4 => overlayScale < 0.75f ? "—" : overlayScale.ToString("P0", CultureInfo.InvariantCulture),

@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c277d6b5d58149640aaa832fcc79a145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeIn: 0
+  fadeIn: 1
   sound: {fileID: 8300000, guid: 16d91893c242ff246a5311a93fae87c2, type: 3}
   sparks:
   - {fileID: 8300000, guid: 376f32c624f229e4ba74fea898eaff09, type: 3}
@@ -663,6 +663,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 136f245b7dbeb244c8a03d296fab2179, type: 3}
   - {fileID: 2800000, guid: 6a67f0a8d19553c4b8d7ce86ce971db6, type: 3}
   - {fileID: 2800000, guid: 542c6ffcc886b8c4389933b25d8abac9, type: 3}
+  - {fileID: 2800000, guid: 250cabb5251cabd4dbc9c58da07c749e, type: 3}
   settingsIcons:
   - {fileID: 2800000, guid: d53f9be1958a7c14e884a616260b1123, type: 3}
   - {fileID: 2800000, guid: 4962a9ecc8a6af1469f3f0955bbdef9e, type: 3}
