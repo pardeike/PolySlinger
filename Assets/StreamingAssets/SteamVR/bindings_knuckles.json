@@ -207,24 +207,6 @@
 				{
 					"inputs": {
 						"click": {
-							"output": "/actions/default/in/grab"
-						}
-					},
-					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger"
-				},
-				{
-					"inputs": {
-						"click": {
-							"output": "/actions/default/in/grab"
-						}
-					},
-					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger"
-				},
-				{
-					"inputs": {
-						"click": {
 							"output": "/actions/default/in/fixture"
 						}
 					},
@@ -239,6 +221,50 @@
 					},
 					"mode": "button",
 					"path": "/user/hand/right/input/a"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/default/in/grab"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/trigger"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/default/in/grab"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/trigger"
+				},
+				{
+					"inputs": {
+						"touch": {
+							"output": "/actions/default/in/peek"
+						}
+					},
+					"mode": "button",
+					"parameters": {
+						"touch_activate_threshold": "0.5",
+						"touch_deactivate_threshold": "0.4"
+					},
+					"path": "/user/hand/left/input/b"
+				},
+				{
+					"inputs": {
+						"touch": {
+							"output": "/actions/default/in/peek"
+						}
+					},
+					"mode": "button",
+					"parameters": {
+						"touch_activate_threshold": "0.5",
+						"touch_deactivate_threshold": "0.4"
+					},
+					"path": "/user/hand/right/input/b"
 				}
 			]
 		}
