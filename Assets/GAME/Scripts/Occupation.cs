@@ -137,11 +137,12 @@ public class Occupation : MonoBehaviour
 	{
 		var (pos, rot) = original.GetComponent<Occupation>().NearestTransform();
 		var ghost = Instantiate(original, pos, rot);
+		ghost.name = "Ghost";
 		var occupation = ghost.GetComponent<Occupation>();
 		occupation.UpdateValidity();
 		ghost.layer = 0;
 		ghost.GetComponent<MeshRenderer>().material = Tower.Instance.GhostMaterials[occupation.valid ? 1 : 0];
-		ghost.GetComponents<BoxCollider>().ForEach(collider => Destroy(collider));
+		ghost.GetComponentsInChildren<BoxCollider>().ForEach(collider => Destroy(collider));
 		Destroy(ghost.GetComponent<Rigidbody>());
 		var handler = ghost.GetComponent<BeamReceivingHandler>();
 		handler.fixated = true;

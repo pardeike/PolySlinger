@@ -51,7 +51,7 @@ public class Pointer : MonoBehaviour
 	bool grabbing = false;
 	Vector3 bodyGrabStartPosition = Vector3.zero;
 	GrabMessage grabInfo = null;
-	int boxesLayer;
+	int rayLayer;
 
 	public void Awake()
 	{
@@ -83,7 +83,7 @@ public class Pointer : MonoBehaviour
 		PeekAction.AddOnStateDownListener(PeekStart, handType);
 		PeekAction.AddOnStateUpListener(PeekEnd, handType);
 
-		boxesLayer = LayerMask.GetMask("Boxes");
+		rayLayer = LayerMask.GetMask("Ray");
 	}
 
 	void Start()
@@ -215,7 +215,7 @@ public class Pointer : MonoBehaviour
 		}
 
 		var raycast = new Ray(pos, pos + 100f * (rot * Vector3.forward));
-		if (Physics.Raycast(raycast, out var hitInfo, 100, boxesLayer))
+		if (Physics.Raycast(raycast, out var hitInfo, 100, rayLayer))
 		{
 			grabInfo = new GrabMessage(beamHandler, pos, rot, hitInfo);
 

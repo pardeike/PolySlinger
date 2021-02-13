@@ -320,6 +320,7 @@ public class Tower : MonoBehaviour
 
 		Destroy(GameObject.Find("Surroundings"));
 		Destroy(GameObject.Find("PiecePortal"));
+		Destroy(GameObject.Find("Ghost"));
 
 		AllPieces()
 			.Select(obj => obj.GetComponent<BeamReceivingHandler>())
